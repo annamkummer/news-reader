@@ -1,11 +1,13 @@
 
-function ArticleContainer() {
+function ArticleContainer({ articles }) {
+
+  const allArticles = articles.map((article, i) => {
+    return <h3 key={i} className="article-title">{article.title}</h3>
+  })
+
   return (
     <div className="article-view">
-      <p>Articles will go here</p>
-      <p>Articles will go here</p>
-      <p>Articles will go here</p>
-      <p>Articles will go here</p>
+      {allArticles}
     </div>
   );
 }
