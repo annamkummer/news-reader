@@ -1,0 +1,71 @@
+[{
+      "section": "us",
+      "subsection": "politics",
+      "title": "As Tanks Rolled Into Ukraine, So Did Malware. Then Microsoft Entered the War.",
+      "abstract": "After years of talks about the need for public-private partnerships to combat cyberattacks, the war in Ukraine is stress-testing the system.",
+      "url": "https://www.nytimes.com/2022/02/28/us/politics/ukraine-russia-microsoft.html",
+      "uri": "nyt://article/d6839d8a-c128-5ceb-953d-6da3152ef9e7",
+      "byline": "By David E. Sanger, Julian E. Barnes and Kate Conger",
+      "item_type": "Article",
+      "updated_date": "2022-02-28T23:19:24-05:00",
+      "created_date": "2022-02-28T19:50:58-05:00",
+      "published_date": "2022-02-28T19:50:58-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+      "Russian Invasion of Ukraine (2022)",
+      "Cyberwarfare and Defense"
+      ],
+      "org_facet": [
+      "Facebook Inc",
+      "Meta Platforms Inc",
+      "Microsoft Corp",
+      "Twitter",
+      "YouTube.com",
+      "United States Cyber Command",
+      "National Security Agency"
+      ],
+      "per_facet": [
+      "Neuberger, Anne"
+      ],
+      "geo_facet": [
+      "Belarus",
+      "Russia",
+      "Ukraine"
+      ],
+      "multimedia": [
+      {
+      "url": "https://static01.nyt.com/images/2022/02/28/multimedia/28dc-cyber-train/28dc-cyber-train-superJumbo.jpg",
+      "format": "Super Jumbo",
+      "height": 1366,
+      "width": 2048,
+      "type": "image",
+      "subtype": "photo",
+      "caption": "Ukrainians gather in a train station in Kyiv in an effort to leave the city shortly after the Russian invasion began.",
+      "copyright": "Lynsey Addario for The New York Times"
+      },
+      {
+      "url": "https://static01.nyt.com/images/2022/02/28/multimedia/28dc-cyber-train/28dc-cyber-train-threeByTwoSmallAt2X.jpg",
+      "format": "threeByTwoSmallAt2X",
+      "height": 400,
+      "width": 600,
+      "type": "image",
+      "subtype": "photo",
+      "caption": "Ukrainians gather in a train station in Kyiv in an effort to leave the city shortly after the Russian invasion began.",
+      "copyright": "Lynsey Addario for The New York Times"
+      },
+      {
+      "url": "https://static01.nyt.com/images/2022/02/28/multimedia/28dc-cyber-train/28dc-cyber-train-thumbLarge.jpg",
+      "format": "Large Thumbnail",
+      "height": 150,
+      "width": 150,
+      "type": "image",
+      "subtype": "photo",
+      "caption": "Ukrainians gather in a train station in Kyiv in an effort to leave the city shortly after the Russian invasion began.",
+      "copyright": "Lynsey Addario for The New York Times"
+      }
+      ],
+      "short_url": "https://nyti.ms/3tBtrMT"
+      }]
+
+  
