@@ -6,31 +6,31 @@ import getStories from '../utils/apiCalls'
 function Home() {
 
   const [stories, setStories] = useState([])
+  const [category, setCategory] = useState('home')
 
-  // Displayed to the user ("All...")
-  // In url ("/")
-  // Sent to fetch ("home")
   const categoryOptions = categories.map((category, i) => {
     return (
-      <option key={i}>{category.option}</option>
+      <option key={i} value={category.fetch}>{category.option}</option>
     )
   })
 
+  const selectCategory = (e) => {
+    setCategory(e.target.value)
+  }
+
   async function fetchStories(category) {
-    let fetchedStories = await getStories(category)
-    setStories(fetchedStories)
+    setStories(await getStories(category))
   }
 
   useEffect(() => {
-    // fetchStories('home')
-    setStories(sampleArticles)
-  }, [])
+    fetchStories(category)
+  }, [category])
 
   return (
     <div className="home-view">
       <h1 className="home-title">Read top stories from the New York Times</h1>
       <label>Choose a category:
-        <select>
+        <select value={category} onChange={selectCategory}>
             {categoryOptions}
         </select>
       </label>

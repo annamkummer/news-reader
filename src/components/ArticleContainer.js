@@ -1,8 +1,12 @@
+import '../css/ArticleContainer.scss'
+import { Link } from 'react-router-dom'
 
 function ArticleContainer({ articles }) {
 
   const allArticles = articles.map((article, i) => {
-    return <h3 key={i} className="article-title">{article.title}</h3>
+    const shortURL = article.short_url.split('/')
+    const id = shortURL[shortURL.length - 1]
+    return <Link key={i} className="article-title" to={`/article/${id}`}>{article.title}</Link>
   })
 
   return (

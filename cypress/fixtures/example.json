@@ -1,5 +1,4 @@
-{
-  "sampleArticles": [{
+[{
     "section": "us",
     "subsection": "politics",
     "title": "As Tanks Rolled Into Ukraine, So Did Malware. Then Microsoft Entered the War.",
@@ -395,4 +394,3 @@
     ],
     "short_url": "https://nyti.ms/343d9U0"
     }]
-}
