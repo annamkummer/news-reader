@@ -1,7 +1,7 @@
 import ArticleContainer from './ArticleContainer'
 import { categories, sampleArticles } from '../utils/utils'
 import { useState, useEffect } from 'react'
-import getStories from '../utils/apiCalls'
+import { getStories } from '../utils/apiCalls'
 
 function Home() {
 
