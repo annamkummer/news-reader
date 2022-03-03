@@ -19,6 +19,7 @@ This straightforward, no-nonsense news application gives you the day's top stori
 <p align="center">
   <img width="364" alt="Article-iPhoneSE" src="https://user-images.githubusercontent.com/75143561/156645561-ca1b67a7-cf83-4b47-b83d-8b56fc7c6335.png">
 </p>
+
 ## Setup Instructions
 
 - Clone down this repo to your computer
