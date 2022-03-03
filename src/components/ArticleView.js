@@ -1,3 +1,4 @@
+import '../css/ArticleView.scss'
 import { useLocation, Link } from 'react-router-dom'
 import { getStory } from '../utils/apiCalls'
 import { useState, useEffect } from 'react'
@@ -18,9 +19,9 @@ function ArticleView() {
         article = <p>{story.message}</p>
     } else {
         article = <>
-                    <h3>{story.title}</h3>
-                    <p>{story.byline}</p>
-                    <p>{story.abstract}</p>
+                    <h2 className="article-header">{story.title}</h2>
+                    <p className="byline">{story.byline}</p>
+                    <p className="abstract">{story.abstract}</p>
                     <a href={story.url} target="_blank" rel="noreferrer">View full story on New York Times site</a>
         </>
     }
@@ -32,7 +33,7 @@ function ArticleView() {
 
     return (
         <div className="article-view">
-        <Link to='/'>Home</Link>
+        <Link to='/' className="home-btn">Home</Link>
         {article}
         </div>
     )

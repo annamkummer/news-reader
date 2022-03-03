@@ -1,15 +1,13 @@
+import '../css/Home.scss'
 import ArticleContainer from './ArticleContainer'
 import { categories } from '../utils/utils'
 import { useState, useEffect } from 'react'
 import { getStories } from '../utils/apiCalls'
-import { useLocation } from 'react-router-dom'
 
 function Home() {
 
-  const url = useLocation().pathname.split('/')
   const [stories, setStories] = useState([])
   const [category, setCategory] = useState('home')
-  const [location, setLocation] = useState(url[url.length - 1])
 
   const categoryOptions = categories.map((category, i) => {
     return (
@@ -32,8 +30,8 @@ function Home() {
   return (
     <div className="home-view">
       <h1 className="home-title">Read top stories from the New York Times</h1>
-      <label>Choose a category:
-        <select value={category} onChange={selectCategory}>
+      <label className="selection" >Choose a category:
+        <select className="dropdown" value={category} onChange={selectCategory}>
             {categoryOptions}
         </select>
       </label>

@@ -23,7 +23,7 @@ function ArticleContainer({ articles }) {
   }
 
   return (
-    <div className="article-view">
+    <div className="article-container">
       {articleList}
     </div>
   );

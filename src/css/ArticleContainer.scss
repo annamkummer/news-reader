@@ -1,5 +1,16 @@
-.article-view {
+.article-container {
     display: flex;
     flex-direction: column;
     font-size: 1.5em;
+    width: 90vw;
+}
+
+.article-title {
+    margin: 1%;
+}
+
+@media screen and (max-width: 600px) {
+    .article-title {
+        padding-bottom: 3%;
+    }
 }
