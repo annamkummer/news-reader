@@ -15,11 +15,15 @@ export const getStory = (id) => {
         .then(response => response.json())
         .then(data => {
             if (data.status === "OK") {
-                return data.results.find(article => {
+                const article = data.results.find(article => {
                     return article.short_url.includes(id) || article.url.includes(id)
                 })
+                if (!article) {
+                    throw new Error("Hmm, can't find that article. It may have been removed from the top stories. Check for new articles on the Home page.") 
+                }
+                return article
             }
-            throw new Error("Hmmm, something went wrong. Please check your internet connection and try again.")
+            throw new Error("Oops, something went wrong. Please check your internet connection and try again.")
         })
         .catch(err => err)
 }

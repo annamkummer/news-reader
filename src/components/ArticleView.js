@@ -2,7 +2,7 @@ import { useLocation, Link } from 'react-router-dom'
 import { getStory } from '../utils/apiCalls'
 import { useState, useEffect } from 'react'
 
-function ArticleContainer() {
+function ArticleView() {
 
     const url = useLocation().pathname.split('/')
     const articleId = url[url.length - 1]
@@ -38,4 +38,4 @@ function ArticleContainer() {
     )
 }
 
-export default ArticleContainer;
+export default ArticleView;
