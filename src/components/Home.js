@@ -1,12 +1,15 @@
 import ArticleContainer from './ArticleContainer'
-import { categories, sampleArticles } from '../utils/utils'
+import { categories } from '../utils/utils'
 import { useState, useEffect } from 'react'
 import { getStories } from '../utils/apiCalls'
+import { useLocation } from 'react-router-dom'
 
 function Home() {
 
+  const url = useLocation().pathname.split('/')
   const [stories, setStories] = useState([])
   const [category, setCategory] = useState('home')
+  const [location, setLocation] = useState(url[url.length - 1])
 
   const categoryOptions = categories.map((category, i) => {
     return (
