@@ -1,6 +1,9 @@
 export const getStories = (category) => {
     return fetch(`https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=JjtHnKuJ2fsaSKglmDtq3XsdKTUxRqe2`)
-        .then(response => response.json())
+        .then(response => {
+            console.log("HEEEEEYYYYYY", response)
+            return response.json()})
+        // .then(response => response.json())
         .then(data => {
             if (data.status === "OK") {
                 return data.results
